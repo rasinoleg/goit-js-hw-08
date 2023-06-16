@@ -12,7 +12,10 @@ const clearForm = e => {
   e.preventDefault();
   form.reset();
   localStorage.removeItem(formKey);
+  console.log(сurrentFormState);
   currentFormState = {};
 };
 form.addEventListener('input', setFormState);
 form.addEventListener('submit', clearForm);
+
+
